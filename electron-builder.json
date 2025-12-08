@@ -44,10 +44,7 @@
   },
   "linux": {
     "target": [
-      "AppImage",
-      "deb",
-      "rpm",
-      "zip"
+      "AppImage"
     ],
     "icon": "build/icons",
     "maintainer": "Alex313031",
