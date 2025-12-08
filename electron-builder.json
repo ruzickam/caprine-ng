@@ -11,22 +11,6 @@
   ],
   "appId": "com.ruzickam.caprine",
   "copyright": "Copyright © 2025 Michal Ruzicka",
-  "mac": {
-    "category": "public.app-category.social-networking",
-    "icon": "build/icon.icns",
-    "electronUpdaterCompatibility": ">=4.5.2",
-    "darkModeSupport": true,
-    "artifactName": "Caprine_${version}_macos_${arch}.${ext}",
-    "target": [
-      "dmg",
-      "zip"
-    ],
-    "extendInfo": {
-      "LSUIElement": 1,
-      "NSCameraUsageDescription": "Caprine needs access to your camera.",
-      "NSMicrophoneUsageDescription": "Caprine needs access to your microphone."
-    }
-  },
   "dmg": {
     "iconSize": 160,
     "contents": [
@@ -79,16 +63,6 @@
         ]
       }
     ]
-  },
-  "win": {
-    "target": [
-      "zip",
-      "portable",
-      "nsis"
-    ],
-    "verifyUpdateCodeSignature": false,
-    "icon": "build/icon.ico",
-    "artifactName": "Caprine_${version}_${arch}.${ext}"
   },
   "nsis": {
     "shortcutName": "Caprine",
