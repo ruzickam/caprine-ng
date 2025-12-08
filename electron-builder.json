@@ -57,10 +57,12 @@
     "category": "Network;Chat",
     "artifactName": "caprine_${version}_${arch}.${ext}",
     "desktop": {
-      "Name": "Caprine",
-      "StartupWMClass": "caprine",
-      "Keywords": "facebook;messenger;chat;",
-      "Icon": "caprine"
+      "entry": {
+        "Name": "Caprine",
+        "StartupWMClass": "caprine",
+        "Keywords": "facebook;messenger;chat;",
+        "Icon": "caprine"
+      }
     }
   },
   "snap": {
