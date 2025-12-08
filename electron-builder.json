@@ -1,5 +1,5 @@
 {
-  "electronVersion": "22.3.27",
+  "electronVersion": "34.5.8",
   "files": [
     "**/*",
     "!media${/*}"
@@ -102,5 +102,5 @@
   },
   "portable": {
     "artifactName": "Caprine_portable_${version}_${arch}.${ext}"
-  },
+  }
 }
