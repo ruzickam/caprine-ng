@@ -49,7 +49,7 @@
 		"electron-util": "^0.17.2",
 		"element-ready": "^5.0.0",
 		"facebook-locales": "^1.0.916",
-		"is-online": "^9.0.1",
+		"is-online": "^12.0.2",
 		"json-schema-typed": "^8.0.2",
 		"lodash": "^4.17.21",
 		"npm-check-updates": "^16.14.20",
