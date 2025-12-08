@@ -14,7 +14,7 @@
 	},
 	"main": "dist-js",
 	"engines": {
-		"node": ">=16"
+		"node": ">=25"
 	},
 	"scripts": {
 		"postinstall": "patch-package && electron-builder install-app-deps",
