@@ -22,7 +22,6 @@ import electronContextMenu from 'electron-context-menu';
 import electronLocalshortcut from 'electron-localshortcut';
 import electronDebug from 'electron-debug';
 import {is, darkMode} from 'electron-util';
-import {bestFacebookLocaleFor} from 'facebook-locales';
 import doNotDisturb from '@sindresorhus/do-not-disturb';
 import updateAppMenu from './menu';
 import config, {StoreType} from './config';
@@ -339,15 +338,30 @@ function initRequestsFiltering(): void {
 }
 
 function setUserLocale(): void {
-	const userLocale = bestFacebookLocaleFor(app.getLocale().replace('-', '_'));
+	const userLocale = app.getLocale().replace('-', '_');
+	const fbUserLocale = getFbUserLocale(userLocale);
 	const cookie = {
 		url: 'https://www.messenger.com/',
 		name: 'locale',
 		secure: true,
-		value: userLocale,
+		value: fbUserLocale,
 	};
 
 	session.defaultSession.cookies.set(cookie);
+}
+
+function getFbUserLocale(userLocale: string): string {
+	switch (userLocale) {
+		case 'es_AR': {
+			return 'es_LA';
+		}
+		case 'ar_EG': {
+			return 'ar_AR';
+		}
+		default: {
+			return userLocale;
+		}
+	}
 }
 
 function setNotificationsMute(status: boolean): void {
