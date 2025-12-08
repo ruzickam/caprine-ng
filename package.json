@@ -64,7 +64,7 @@
 		"electron": "^34.5.8",
 		"electron-builder": "^26.0.12",
 		"husky": "^9.1.7",
-		"np": "7.7.0",
+		"np": "^10.2.0",
 		"patch-package": "^8.0.0",
 		"rimraf": "^3.0.2",
 		"stylelint": "^14.16.1",
