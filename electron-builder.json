@@ -45,9 +45,9 @@
         "Icon": "caprine"
       }
     },
-		"executableArgs": [
-			"--ozone-platform=x11"
-		]
+    "executableArgs": [
+      "--ozone-platform=x11"
+    ]
   },
   "snap": {
     "plugs": [
