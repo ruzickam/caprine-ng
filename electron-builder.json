@@ -9,8 +9,8 @@
     "static/Icon64.png",
     "static/icon.ico"
   ],
-  "appId": "com.alex313031.caprine",
-  "copyright": "Copyright © 2025 Alex313031",
+  "appId": "com.ruzickam.caprine",
+  "copyright": "Copyright © 2025 Michal Ruzicka",
   "mac": {
     "category": "public.app-category.social-networking",
     "icon": "build/icon.icns",
@@ -47,8 +47,8 @@
       "AppImage"
     ],
     "icon": "build/icons",
-    "maintainer": "Alex313031",
-    "vendor": "Alex313031",
+    "maintainer": "Michal Ruzicka",
+    "vendor": "Michal Ruzicka",
     "synopsis": "Elegant Facebook Messenger desktop app",
     "description": "Caprine is an unofficial and privacy focused Facebook Messenger app with many useful features.",
     "category": "Network;Chat",

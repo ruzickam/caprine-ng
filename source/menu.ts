@@ -13,8 +13,6 @@ import {
 	appMenu,
 	openUrlMenuItem,
 	aboutMenuItem,
-	openNewGitHubIssue,
-	debugInfo,
 } from 'electron-util';
 import config from './config';
 import getSpellCheckerLanguages from './spell-checker';
@@ -738,34 +736,12 @@ Press Command/Ctrl+R in Caprine to see your changes.
 	const helpSubmenu: MenuItemConstructorOptions[] = [
 		openUrlMenuItem({
 			label: 'Website',
-			url: 'https://github.com/Alex313031/caprine-ng#readme',
+			url: 'https://github.com/ruzickam/caprine-ng#readme',
 		}),
 		openUrlMenuItem({
 			label: 'Source Code',
-			url: 'https://github.com/Alex313031/caprine-ng',
+			url: 'https://github.com/ruzickam/caprine-ng',
 		}),
-		openUrlMenuItem({
-			label: 'Donate…',
-			url: 'https://github.com/Alex313031/caprine-ng?sponsor=1',
-		}),
-		{
-			label: 'Report an Issue…',
-			click() {
-				const body = `
-<!-- Please succinctly describe your issue and steps to reproduce it. -->
-
-
----
-
-${debugInfo()}`;
-
-				openNewGitHubIssue({
-					user: 'Alex313031',
-					repo: 'caprine-ng',
-					body,
-				});
-			},
-		},
 	];
 
 	helpSubmenu.push(
@@ -803,8 +779,8 @@ ${debugInfo()}`;
 		aboutMenuItem({
 			icon: is.linux || is.macos ? caprineIcon64Path : caprineWinIconPath,
 			copyright: 'Created by Sindre Sorhus',
-			text: 'Maintainers:\nAlex313031\nDušan Simić\nLefteris Garyfalakis\nMichael Quevillon\nNikolas Spiridakis',
-			website: 'https://github.com/Alex313031/caprine-ng#readme',
+			text: 'Maintainers:\nMichal Ruzicka\nAlex313031\nDušan Simić\nLefteris Garyfalakis\nMichael Quevillon\nNikolas Spiridakis',
+			website: 'https://github.com/ruzickam/caprine-ng#readme',
 		}),
 	);
 
