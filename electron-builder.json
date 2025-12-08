@@ -1,5 +1,5 @@
 {
-  "electronVersion": "34.5.8",
+  "electronVersion": "39.2.6",
   "files": [
     "**/*",
     "!media${/*}"
@@ -44,7 +44,10 @@
         "Keywords": "facebook;messenger;chat;",
         "Icon": "caprine"
       }
-    }
+    },
+		"executableArgs": [
+			"--ozone-platform=x11"
+		]
   },
   "snap": {
     "plugs": [

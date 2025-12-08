@@ -220,7 +220,7 @@ async function updateBadge(messageCount: number): Promise<void> {
 			&& config.get('bounceDockOnMessage')
 			&& previousMessageCount !== messageCount
 		) {
-			app.dock.bounce('informational');
+			app.dock?.bounce('informational');
 			previousMessageCount = messageCount;
 		}
 	}
@@ -530,11 +530,11 @@ function createMainWindow(): BrowserWindow {
 		};
 
 		dockMenu = Menu.buildFromTemplate([firstItem]);
-		app.dock.setMenu(dockMenu);
+		app.dock?.setMenu(dockMenu);
 
 		// Dock icon is hidden initially on macOS
 		if (config.get('showDockIcon')) {
-			app.dock.show();
+			app.dock?.show();
 		}
 
 		ipc.once('conversations', () => {
@@ -557,7 +557,7 @@ function createMainWindow(): BrowserWindow {
 				},
 			}));
 
-			app.dock.setMenu(Menu.buildFromTemplate([firstItem, {type: 'separator'}, ...items]));
+			app.dock?.setMenu(Menu.buildFromTemplate([firstItem, {type: 'separator'}, ...items]));
 		});
 	}
 
