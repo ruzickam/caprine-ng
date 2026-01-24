@@ -47,7 +47,6 @@
 		"is-online": "^12.0.2",
 		"json-schema-typed": "^8.0.2",
 		"lodash": "^4.17.21",
-		"npm-check-updates": "^16.14.20",
 		"p-wait-for": "^3.2.0"
 	},
 	"devDependencies": {
@@ -56,20 +55,16 @@
 		"@types/lodash": "^4.14.202",
 		"del-cli": "^5.1.0",
 		"electron": "^39.2.6",
-		"electron-builder": "^26.0.12",
+		"electron-builder": "^26.4.1",
 		"husky": "^9.1.7",
 		"patch-package": "^8.0.1",
 		"rimraf": "^3.0.2",
 		"stylelint": "^14.16.1",
 		"stylelint-config-xo": "^0.22.0",
 		"typescript": "^5.4.5",
-		"xo": "0.56.0"
+		"xo": "^1.2.3"
 	},
 	"xo": {
-		"envs": [
-			"node",
-			"browser"
-		],
 		"rules": {
 			"@typescript-eslint/ban-ts-comment": "off",
 			"@typescript-eslint/consistent-type-imports": "off",
@@ -89,9 +84,17 @@
 			"@typescript-eslint/no-unsafe-enum-comparison": "off",
 			"@typescript-eslint/no-var-requires": "off",
 			"@typescript-eslint/padding-line-between-statements": "off",
+			"@typescript-eslint/no-unsafe-return": "off",
+			"@typescript-eslint/prefer-nullish-coalescing": "off",
+			"@typescript-eslint/no-deprecated": "off",
+			"@typescript-eslint/await-thenable": "off",
+			"@typescript-eslint/switch-exhaustiveness-check": "off",
+			"@typescript-eslint/no-restricted-types": "off",
 			"import/extensions": "off",
 			"import/no-anonymous-default-export": "off",
 			"import/no-cycle": "off",
+			"import-x/extensions": "off",
+			"import-x/no-anonymous-default-export": "off",
 			"n/prefer-global/process": "warn",
 			"object-shorthand": "warn",
 			"padding-line-between-statements": "warn",
@@ -99,7 +102,16 @@
 			"n/file-extension-in-import": "off",
 			"unicorn/prefer-at": "off",
 			"unicorn/prefer-module": "off",
-			"unicorn/prefer-top-level-await": "off"
+			"unicorn/prefer-top-level-await": "off",
+			"unicorn/prefer-global-this": "off",
+			"unicorn/no-anonymous-default-export": "off",
+			"unicorn/consistent-existence-index-check": "off",
+			"@stylistic/indent": "off",
+			"@stylistic/multiline-ternary": "off",
+			"@stylistic/function-paren-newline": "off",
+			"@stylistic/indent-binary-ops": "off",
+			"@stylistic/padding-line-between-statements": "off",
+			"promise/prefer-await-to-then": "off"
 		}
 	},
 	"stylelint": {

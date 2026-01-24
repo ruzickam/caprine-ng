@@ -578,7 +578,6 @@ async function setZoom(zoomFactor: number): Promise<void> {
 }
 
 async function withConversationMenu(callback: () => void): Promise<void> {
-	// eslint-disable-next-line @typescript-eslint/ban-types
 	let menuButton: HTMLElement | null = null;
 	const conversation = document.querySelector<HTMLElement>(selectors.selectedConversation)!.closest(`${selectors.conversationList} > div`);
 
@@ -694,7 +693,6 @@ async function observeAutoscroll(): Promise<void> {
 	}
 
 	const scrollToBottom = (): void => {
-		// eslint-disable-next-line @typescript-eslint/ban-types
 		const scrollableElement: HTMLElement | null = document.querySelector('[role=presentation] .scrollable');
 		if (scrollableElement) {
 			scrollableElement.scroll({
