@@ -55,7 +55,7 @@
 		"@types/lodash": "^4.14.202",
 		"del-cli": "^5.1.0",
 		"electron": "^39.2.6",
-		"electron-builder": "^26.5.0",
+		"electron-builder": "^26.8.1",
 		"husky": "^9.1.7",
 		"patch-package": "^8.0.1",
 		"rimraf": "^3.0.2",
