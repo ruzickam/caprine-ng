@@ -424,15 +424,6 @@ async function updateSidebar(): Promise<void> {
 	}
 }
 
-// TODO: Implement this function
-async function updateDoNotDisturb(): Promise<void> {
-	const shouldClosePreferences = await openHiddenPreferences();
-
-	if (shouldClosePreferences) {
-		await closePreferences();
-	}
-}
-
 function renderOverlayIcon(messageCount: number): HTMLCanvasElement {
 	const canvas = document.createElement('canvas');
 	canvas.height = 128;
@@ -777,11 +768,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 	// Activate Private Mode if it was set before quitting
 	setPrivateMode();
-
-	// Configure do not disturb
-	if (is.macos) {
-		await updateDoNotDisturb();
-	}
 
 	// Prevent flash of white on startup when in dark mode
 	// TODO: find a CSS-only solution

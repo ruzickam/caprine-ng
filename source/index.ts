@@ -523,6 +523,7 @@ function createMainWindow(): BrowserWindow {
 		const firstItem: MenuItemConstructorOptions = {
 			label: 'Mute Notifications',
 			type: 'checkbox',
+			visible: false,
 			checked: config.get('notificationsMuted'),
 			async click() {
 				setNotificationsMute(await ipc.callRenderer(mainWindow, 'toggle-mute-notifications'));
@@ -619,10 +620,6 @@ function createMainWindow(): BrowserWindow {
 				return isDNDEnabled ? false : initialSoundsValue;
 			});
 		}
-
-		setNotificationsMute(await ipc.callRenderer(mainWindow, 'toggle-mute-notifications', {
-			defaultStatus: config.get('notificationsMuted'),
-		}));
 
 		ipc.callRenderer(mainWindow, 'toggle-message-buttons', config.get('showMessageButtons'));
 
